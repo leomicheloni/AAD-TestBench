@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "b6dfe28e-94da-4ee5-92da-55021ab77fe2",
+		"name": "testaad",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23380495"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5056/weatherforecast",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6ImtXYmthYTZxczh3c1RuQndpaU5ZT2hIYm5BdyIsImtpZCI6ImtXYmthYTZxczh3c1RuQndpaU5ZT2hIYm5BdyJ9.eyJhdWQiOiJhcGk6Ly9lMWZjNzZmMi1iOWVmLTQ3NzgtODkyMS0xNjczMzA5ZWRlOTAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9mMTZkMjU1My05MzZhLTRjNzQtYjcyNS0wNjVjNTczOTgzZDQvIiwiaWF0IjoxNzA4NjM4MDI1LCJuYmYiOjE3MDg2MzgwMjUsImV4cCI6MTcwODY0MTkyNSwiYWlvIjoiRTJOZ1lBaSs4MFpsMXIyK2hvV3pPU2R2ZnAyMEZ3QT0iLCJhcHBpZCI6ImZjMmQyOTJhLTMxYjctNGNjOC04ZjhjLTMyMTYxOWIwZjc5YiIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0L2YxNmQyNTUzLTkzNmEtNGM3NC1iNzI1LTA2NWM1NzM5ODNkNC8iLCJvaWQiOiIwZTU2YzA1YS1kNmIwLTRlODctYTE5MC1iM2EwMmFkMGI2YzAiLCJyaCI6IjAuQVE4QVV5VnQ4V3FUZEV5M0pRWmNWem1EMVBKMl9PSHZ1WGhIaVNFV2N6Q2UzcEFQQUFBLiIsInJvbGVzIjpbInJlYWRlciJdLCJzdWIiOiIwZTU2YzA1YS1kNmIwLTRlODctYTE5MC1iM2EwMmFkMGI2YzAiLCJ0aWQiOiJmMTZkMjU1My05MzZhLTRjNzQtYjcyNS0wNjVjNTczOTgzZDQiLCJ1dGkiOiJhTmJRQ2dfdDAwV2ZzS01iTEU0NkFBIiwidmVyIjoiMS4wIn0.F0Ja-2ee351SpGvc605HUE954K6d4AxIUdK4vNglMLMH9Y1C06jUr7doVhpYDoUxHhXyZ3uJeD6pqsSwXyIYwIfgF7qArqT1t47sxQdbcGy_kanO3pF9HZAjeIgyKhzYgdhMisNIcdoFeQvDbRtEgJXp3LjYiph8HNVT01qNm2OW7rEcbXfRCBpaBdjxbmorwmofh6zUS9g2-XQKX7qMJT75u1jC7OC71nBKjgxcIa6bWmFqQZ1UyTdyV583N67VtrgWCUWK3pbM2weOco9qaTk8UVEDQXdzhfoUX72R2Enz9wcmfmrug45eWNVHU8F-Ia7MysgFN66F9xdafBDRFQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5056/weatherforecast",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5056",
+					"path": [
+						"weatherforecast"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "client credentials",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "default"
+						},
+						{
+							"key": "client_id",
+							"value": "fc2d292a-31b7-4cc8-8f8c-321619b0f79b",
+							"type": "default"
+						},
+						{
+							"key": "client_secret",
+							"value": "usw8Q~tOHV.b.e5Zng3IUIcNgeOY~qJMeI7SLc7.",
+							"type": "default"
+						},
+						{
+							"key": "scope",
+							"value": "api://e1fc76f2-b9ef-4778-8921-1673309ede90/.default",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://login.microsoftonline.com/f16d2553-936a-4c74-b725-065c573983d4/oauth2/v2.0/token",
+					"protocol": "https",
+					"host": [
+						"login",
+						"microsoftonline",
+						"com"
+					],
+					"path": [
+						"f16d2553-936a-4c74-b725-065c573983d4",
+						"oauth2",
+						"v2.0",
+						"token"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
